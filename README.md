@@ -4,9 +4,6 @@
 
 ### Installation
 
-1. `$ apt-get install nodejs git-core`
-2. `$ git clone http://github.com/sli/sensed.git`
-3. `$ cd sensed`
-4. `$ npm install`
-5. `$ npm install forever -g`
-6. `$ forever start sensed.js`
+```
+curl https://raw.githubusercontent.com/bmuk/sensed/master/install.sh | bash
+```
