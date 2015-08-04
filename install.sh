@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Make sure utilities are installed
-sudo apt-get install -y curl git
+sudo apt-get install -y curl git systemd systemd-sysv
 
 # Get nodejs
 curl --silent --location http://deb.nodesource.com/setup_0.12 | sudo bash -
