@@ -1,5 +1,18 @@
 #!/bin/bash
 
+ensure_up_to_date () {
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt-get dist-upgrade -y
+}
+
+# Make sure wheezy is up to date
+ensure_up_to_date
+
+# Change to jessie
+sudo sed -i 's/wheezy/jessie/' /etc/apt/sources.list
+ensure_up_to_date
+
 # Make sure utilities are installed
 sudo apt-get install -y --force-yes curl git systemd systemd-sysv
 
